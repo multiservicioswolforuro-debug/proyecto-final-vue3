@@ -1,127 +1,244 @@
-# Vue 3 + Vite
+# 🛒 Sistema de Gestión de Productos — Vue 3
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
-# 🛒 Sistema de Gestión de Productos (Vue.js)
-
-## 📌 Descripción
-
-Aplicación web desarrollada en Vue 3 para la gestión de productos, que permite realizar operaciones CRUD completas, autenticación de usuarios y filtrado dinámico.
+Aplicación web desarrollada con Vue 3 y Vite para la administración de productos mediante operaciones CRUD completas, autenticación de usuarios y filtrado dinámico por categorías.
 
 ---
 
-## 🚀 Tecnologías utilizadas
+# 🚀 Demo del Proyecto
 
-* Vue 3 (Composition API)
-* Vue Router
-* Axios
-* JSON Server (API simulada)
-* SweetAlert2 (alertas modernas)
-* CSS personalizado
+Sistema académico desarrollado con:
 
----
-
-## 🔐 Funcionalidades
-
-### ✔ Autenticación
-
-* Login de usuario
-* Protección de rutas
-* Logout
-
-### ✔ Gestión de Productos (CRUD)
-
-* Crear productos
-* Listar productos
-* Editar productos ✏️
-* Eliminar productos ❌
-* Ver detalle 👁️
-
-### ✔ Categorías
-
-* Relación producto-categoría
-* Filtro por categoría
-
-### ✔ Búsqueda
-
-* Buscador en tiempo real
-
-### ✔ Mejoras UX/UI
-
-* Alertas con SweetAlert2
-* Estados de carga (loading)
-* Manejo de errores con try/catch
-* Diseño tipo dashboard
+- 🔐 Autenticación de usuarios
+- 📦 Gestión de productos
+- 🧩 Gestión de categorías
+- 🔎 Búsqueda en tiempo real
+- 🎨 Interfaz moderna tipo dashboard
+- ⚡ Consumo de API con Axios
+- 🗄️ Backend simulado con JSON Server
 
 ---
 
-## 📂 Estructura del proyecto
+# 📸 Módulos del Sistema
 
-```
+## 🔐 Login de Usuario
+
+- Inicio de sesión
+- Protección de rutas privadas
+- Logout de usuario
+
+---
+
+## 📦 Gestión de Productos
+
+El sistema permite:
+
+✅ Listar productos  
+✅ Crear nuevos productos  
+✅ Editar productos  
+✅ Eliminar productos  
+✅ Ver detalle de productos  
+
+---
+
+## 🧩 Categorías
+
+- Relación entre productos y categorías
+- Filtro dinámico por categoría
+
+---
+
+## 🔎 Buscador Dinámico
+
+- Filtrado instantáneo de productos
+- Búsqueda en tiempo real
+
+---
+
+# 🛠️ Tecnologías Utilizadas
+
+| Tecnología | Descripción |
+|---|---|
+| Vue 3 | Framework principal |
+| Vite | Entorno de desarrollo |
+| Vue Router | Manejo de rutas |
+| Axios | Consumo de API |
+| JSON Server | Backend simulado |
+| SweetAlert2 | Alertas modernas |
+| CSS3 | Estilos personalizados |
+
+---
+
+# 📂 Estructura del Proyecto
+
+```bash
 src/
- ├── views/
- ├── components/
- ├── services/
- ├── router/
- ├── assets/
+│
+├── assets/
+├── components/
+├── layouts/
+├── router/
+├── services/
+├── views/
+│
+├── App.vue
+├── main.js
 ```
 
 ---
 
-## ⚙️ Instalación
+# ⚙️ Instalación del Proyecto
+
+## 1️⃣ Clonar repositorio
+
+```bash
+git clone https://github.com/multiservicioswolforuro-debug/proyecto-final-vue3.git
+```
+
+---
+
+## 2️⃣ Ingresar al proyecto
+
+```bash
+cd proyecto-final-vue3
+```
+
+---
+
+## 3️⃣ Instalar dependencias
 
 ```bash
 npm install
-npm run dev
 ```
 
 ---
 
-## 🗄️ Backend (JSON Server)
+# 🔐 Variables de Entorno
 
-```bash
-npx json-server db.json --port 3001
-```
+Crear archivo `.env`
 
----
-
-## 🔐 Variables de entorno
-
-Crear archivo `.env`:
-
-```
+```env
 VITE_API_URL=http://localhost:3001
 ```
 
 ---
 
-## 📸 Capturas
+# 🗄️ Levantar Backend (JSON Server)
 
-* Login
-* Dashboard
-* Productos
-* CRUD completo
+Ejecutar:
 
----
+```bash
+npx json-server db.json --port 3001
+```
 
-## 👨‍💻 Autor
+Backend:
 
-Proyecto desarrollado como sistema académico de gestión de productos utilizando Vue.js.
-
----
-
-## 🎯 Estado del proyecto
-
-✅ Funcional
-✅ Completo
-✅ Listo para presentación
+```bash
+http://localhost:3001
+```
 
 ---
 
-## 🚀 Mejoras futuras
+# 🚀 Levantar Frontend
 
-* Dashboard con estadísticas
-* Modo oscuro
-* Roles de usuario
-* Backend real (Node / Laravel)
+Ejecutar:
+
+```bash
+npm run dev
+```
+
+Frontend:
+
+```bash
+http://localhost:5173
+```
+
+---
+
+# 🔒 Seguridad Implementada
+
+✅ Protección de rutas privadas  
+✅ Manejo de sesión con LocalStorage  
+✅ Redirección automática al login  
+✅ Logout seguro  
+
+---
+
+# 🎨 Características UI/UX
+
+✅ Diseño moderno tipo dashboard  
+✅ Navbar dinámica  
+✅ Formularios estilizados  
+✅ Tabla dinámica de productos  
+✅ Botones interactivos  
+✅ Alertas modernas con SweetAlert2  
+
+---
+
+# 📌 Funcionalidades CRUD
+
+| Función | Estado |
+|---|---|
+| Crear productos | ✅ |
+| Leer productos | ✅ |
+| Editar productos | ✅ |
+| Eliminar productos | ✅ |
+| Ver detalles | ✅ |
+
+---
+
+# 📸 Capturas del Sistema
+
+## 🔐 Login
+Sistema de autenticación de usuarios.
+
+## 📦 Productos
+Tabla dinámica de productos.
+
+## ➕ Crear Producto
+Formulario moderno para registro.
+
+## ✏️ Editar Producto
+Actualización de productos.
+
+## 👁️ Detalle Producto
+Vista detallada del producto.
+
+---
+
+# 👨‍💻 Autor
+
+Desarrollado por:
+
+**Juan José Callahuara Condori**
+
+Proyecto académico desarrollado con Vue 3 + Vite.
+
+---
+
+# 🎯 Estado del Proyecto
+
+✅ Proyecto funcional  
+✅ CRUD completo  
+✅ Login implementado  
+✅ Protección de rutas  
+✅ Consumo de API  
+✅ Diseño finalizado  
+✅ Listo para presentación  
+
+---
+
+# 🚀 Mejoras Futuras
+
+- Dashboard estadístico
+- Roles de usuario
+- Backend real con Node.js o Laravel
+- JWT Authentication
+- Modo oscuro
+- Exportación PDF/Excel
+- Responsive Mobile
+
+---
+
+# 📄 Licencia
+
+Proyecto desarrollado con fines académicos.

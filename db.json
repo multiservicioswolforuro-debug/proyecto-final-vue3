@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nombre": "Celulares"
+    },
+    {
+      "id": "2",
+      "nombre": "Laptops"
+    },
+    {
+      "id": "3",
+      "nombre": "Cámaras"
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "iPhone 13",
+      "precio": 3500,
+      "stock": 100,
+      "categoriaId": 1,
+      "id": "1"
+    },
+    {
+      "nombre": "Samsung Galaxy S22",
+      "precio": 9000,
+      "stock": 15,
+      "categoriaId": 1,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "nombre": "Laptop HP Pavilion",
+      "precio": 1500,
+      "stock": 5,
+      "categoriaId": 2
+    },
+    {
+      "id": "4",
+      "nombre": "Laptop Lenovo ThinkPad",
+      "precio": 1800,
+      "stock": 7,
+      "categoriaId": 2
+    },
+    {
+      "id": "5",
+      "nombre": "Cámara Canon EOS",
+      "precio": 800,
+      "stock": 8,
+      "categoriaId": 3
+    },
+    {
+      "id": "6",
+      "nombre": "Cámara Nikon D3500",
+      "precio": 750,
+      "stock": 6,
+      "categoriaId": 3
+    },
+    {
+      "nombre": "Iphone 17 Pro",
+      "precio": 12000,
+      "stock": 5,
+      "categoriaId": 1,
+      "id": "Q_ftkEZZ6MQ"
+    },
+    {
+      "nombre": "Iphone air",
+      "precio": 7500,
+      "stock": 20,
+      "categoriaId": 1,
+      "id": "reNSNaGcVY8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
